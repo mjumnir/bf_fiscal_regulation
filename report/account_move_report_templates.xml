@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="report_invoice_document_bf_fiscal"
+              inherit_id="account.report_invoice_document">
+        <t t-set="address">
+            <p>
+                <t><b>IFU</b></t>: <span t-field="doc.partner_id.ifu"/><br/>
+                <t><b>RCCM</b></t>: <span t-field="doc.partner_id.rccm"/><br/>
+                <t><b>Régime d'imposition</b></t>: <span t-field="doc.partner_id.regime_impot_id.name"/><br/>
+                <t><b>Division fiscale</b></t>: <span t-field="doc.partner_id.division_fiscale_id.name"/>
+            </p>
+        </t>
+    </template>
+
+</odoo>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_partner_form_bf_fiscal" model="ir.ui.view">
+        <field name="name">res.partner.form.bf.fiscal</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <field name="category_id" position="after">
+                <field name="ifu"
+                       required="company_type == 'company'"
+                       placeholder="e.g. 00012345A"
+                       string='IFU'/>
+                <field name="rccm"
+                       required="company_type == 'company'"
+                       placeholder="e.g. BF OUA 2024 B 1234"
+                       string='RCCM'/>
+                <field name="regime_impot_id"/>
+                <field name="division_fiscale_id"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>

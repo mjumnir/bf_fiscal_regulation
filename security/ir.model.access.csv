@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_bf_regime_impot_user,bf.regime.impot.user,model_bf_regime_impot,base.group_user,1,0,0,0
+access_bf_regime_impot_manager,bf.regime.impot.manager,model_bf_regime_impot,account.group_account_manager,1,1,1,1
+access_bf_division_fiscale_user,bf.division.fiscale.user,model_bf_division_fiscale,base.group_user,1,0,0,0
+access_bf_division_fiscale_manager,bf.division.fiscale.manager,model_bf_division_fiscale,account.group_account_manager,1,1,1,1

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="report_external_layout_standard_bf_fiscal"
+              inherit_id="web.external_layout_standard">
+        <xpath expr="//div[@name='company_address']/ul" position="inside">
+            <p>
+                <span t-field="company.ifu"/><br/>
+                <span t-field="company.rccm"/><br/>
+                <span t-field="company.regime_impot_id.name"/><br/>
+                <span t-field="company.division_fiscale_id.name"/>
+            </p>
+        </xpath>
+    </template>
+
+</odoo>

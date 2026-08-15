@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_bf_division_fiscale_tree" model="ir.ui.view">
+        <field name="name">bf.division.fiscale.tree</field>
+        <field name="model">bf.division.fiscale</field>
+        <field name="arch" type="xml">
+            <tree string="Divisions fiscales" editable="bottom">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_bf_division_fiscale_form" model="ir.ui.view">
+        <field name="name">bf.division.fiscale.form</field>
+        <field name="model">bf.division.fiscale</field>
+        <field name="arch" type="xml">
+            <form string="Division fiscale">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="active" invisible="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_bf_division_fiscale" model="ir.actions.act_window">
+        <field name="name">Divisions fiscales</field>
+        <field name="res_model">bf.division.fiscale</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_bf_division_fiscale"
+              name="Divisions fiscales (BF)"
+              parent="account.menu_finance_configuration"
+              action="action_bf_division_fiscale"
+              sequence="91"/>
+
+</odoo>
