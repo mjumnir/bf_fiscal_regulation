@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.log
+.pytest_cache/
+.ruff_cache/
+.idea/
+.vscode/
+tmp/
+*.zip
+/compose.yaml
+/docker/
+/scripts/
