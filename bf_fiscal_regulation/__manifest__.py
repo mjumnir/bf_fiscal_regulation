@@ -30,7 +30,7 @@ fiscal divisions can be maintained without touching the code:
 * Régime d'imposition (bf.regime.impot)
 * Division fiscale (bf.division.fiscale)
 """,
-    'version': '17.0.1.0.0',
+    'version': '17.0.1.0.1',
     'category': 'Accounting/Localizations',
     'author': 'Mjumnir (Unik Uslug)',
     'website': 'https://github.com/mjumnir/bf_fiscal_regulation/tree/17.0/bf_fiscal_regulation',
