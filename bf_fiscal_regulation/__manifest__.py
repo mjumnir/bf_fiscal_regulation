@@ -33,11 +33,12 @@ fiscal divisions can be maintained without touching the code:
     'version': '17.0.1.0.0',
     'category': 'Accounting/Localizations',
     'author': 'Mjumnir (Unik Uslug)',
-    'website': 'https://mjumnir.atjm-inter.com',
+    'website': 'https://github.com/mjumnir/bf_fiscal_regulation/tree/17.0/bf_fiscal_regulation',
     'maintainers': ['mjumnir'],
     'support': 'mjumnir@gmail.com',
     'license': 'LGPL-3',
     'icon': '/bf_fiscal_regulation/static/description/icon.png',
+    "images": ["static/description/banner.png"],
     'countries': ['bf'],
     'depends': ['base', 'contacts', 'sale', 'account'],
     'data': [
